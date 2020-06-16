@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>407</width>
-    <height>132</height>
+    <width>774</width>
+    <height>429</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,13 +18,13 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>0</y>
-      <width>411</width>
+      <y>10</y>
+      <width>521</width>
       <height>131</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -65,8 +65,7 @@
 }
 
 QPushButton:pressed {
-    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                      stop: 0 #FF7832, stop: 1 #FF9739);
+    background-color: rgb(255,0,255);
 }</string>
       </property>
       <property name="text">
@@ -80,7 +79,7 @@ QPushButton:pressed {
         <x>310</x>
         <y>0</y>
         <width>91</width>
-        <height>101</height>
+        <height>51</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -91,8 +90,7 @@ QPushButton:pressed {
 }
 
 QPushButton:pressed {
-    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                      stop: 0 #FF7832, stop: 1 #FF9739);
+    background-color: rgb(255,0,255);
 }</string>
       </property>
       <property name="text">
@@ -117,8 +115,7 @@ QPushButton:pressed {
 }
 
 QPushButton:pressed {
-    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
-                                      stop: 0 #FF7832, stop: 1 #FF9739);
+    background-color: rgb(255,0,255);
 }</string>
       </property>
       <property name="text">
@@ -144,7 +141,57 @@ QPushButton:pressed {
 </string>
       </property>
       <property name="text">
-       <string>TextLabel</string>
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>50</y>
+        <width>91</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: rgb(0, 0, 255);
+  color: white; 
+  border: 1px solid black;
+}
+
+QPushButton:pressed {
+    background-color: rgb(255,0,255);
+}</string>
+      </property>
+      <property name="text">
+       <string>Очистка 
+ памяти</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_9">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>0</y>
+        <width>111</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: rgb(0, 0, 255);
+  color: white; 
+  border: 1px solid black;
+}
+
+QPushButton:pressed {
+    background-color: rgb(255,0,255);
+}</string>
+      </property>
+      <property name="text">
+       <string>Узнать размер 
+ очереди</string>
       </property>
      </widget>
     </widget>
@@ -152,24 +199,6 @@ QPushButton:pressed {
      <attribute name="title">
       <string>Tab 2</string>
      </attribute>
-     <widget class="QLineEdit" name="lineEdit">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>221</width>
-        <height>51</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QLabel {
-  background-color: white;
-  color: black; 
-  border: 1px solid black;
-}
-</string>
-      </property>
-     </widget>
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
@@ -188,7 +217,7 @@ QPushButton:pressed {
 </string>
       </property>
       <property name="text">
-       <string>TextLabel</string>
+       <string/>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_4">
@@ -248,7 +277,7 @@ QPushButton:pressed {
         <x>310</x>
         <y>0</y>
         <width>91</width>
-        <height>101</height>
+        <height>51</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -267,6 +296,81 @@ QPushButton:pressed {
  элеметов</string>
       </property>
      </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>221</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+  background-color: white;
+  color: black; 
+  border: 1px solid;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_8">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>50</y>
+        <width>91</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: rgb(255, 151, 57);
+  color: white; 
+  border: 1px solid black;
+}
+
+QPushButton:pressed {
+    background-color:red ;
+}</string>
+      </property>
+      <property name="text">
+       <string>Очистка 
+ памяти</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_10">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>0</y>
+        <width>111</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+  background-color: rgb(255, 151, 57);
+  color: white; 
+  border: 1px solid black;
+}
+
+QPushButton:pressed {
+    background-color:red ;
+}</string>
+      </property>
+      <property name="text">
+       <string>Узнать размер 
+ очереди</string>
+      </property>
+     </widget>
+     <zorder>pushButton_5</zorder>
+     <zorder>pushButton_6</zorder>
+     <zorder>lineEdit</zorder>
+     <zorder>label_2</zorder>
+     <zorder>pushButton_4</zorder>
+     <zorder>pushButton_8</zorder>
+     <zorder>pushButton_10</zorder>
     </widget>
    </widget>
   </widget>
