@@ -11,8 +11,8 @@ MainWindow::MainWindow(QWidget *parent)
 
 //    queint = new Queue<int>(10,true);
  //   questr = new Queue<QString>(10,false);
-    queint = new Queue<int> (10,true);
-    questr = new Queue<QString> (10,false);
+    queint = new Queue<int> (10);
+    questr = new Queue<QString> (10);
 
 }
 
@@ -32,7 +32,7 @@ void MainWindow::on_pushButton_3_clicked()
 {
 
    // ui->label->setText(QString::number( intQueue.dequeue()));
-    ui->label->setText(QString::number(queint->dequeueint()));
+    ui->label->setText(QString::number(queint->dequeue()));
 }
 
 void MainWindow::on_pushButton_9_clicked()
@@ -72,5 +72,5 @@ void MainWindow::on_pushButton_10_clicked()
 
 void MainWindow::on_pushButton_5_clicked()
 {
-    ui->label_2->setText(questr->dequeuestr());
+    ui->label_2->setText(questr->dequeue());
 }

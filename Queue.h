@@ -8,8 +8,9 @@ class Queue {
     int counter = 0;
     int m_size;
     bool typequalifier = true;
+        T *array;
 public:
-    T *array;
+
     Queue (int size, bool par) {
         if (par == true) {
             MakerInt(size);
@@ -35,22 +36,11 @@ public:
             array[i]='0';*/
     }
 
-/*    Queue (int size, bool par) {   //old variant
+    Queue (int size) {   //old variant
         array = new T[size];
         m_size = size;
-        if (par == true){
-            typequalifier = true;
-        for(int i=0; i < (m_size-1); i++) {
-            array[i] =0;
-            }
-        } else {
-            typequalifier = false;
-            for(int i=0; i < (m_size-1); i++) {
-                array[i] ='n';
-                }
-        }
     }
-*/
+
     void enqueue(T value) {
 
         array[counter] = value;
@@ -63,7 +53,7 @@ public:
     }
 
 
-    T dequeueint() {
+ /*   T dequeueint() {
         T enq = array[0];
         if (counter != 0) {
         for (int i = 0; i < (counter-1); i++ ) {
@@ -93,19 +83,16 @@ public:
         counter--;
         return  enq;
         }
-    }
+    } */
 
- /*  T dequeue () {
+   T dequeue () {
         T enq = array[0];
         for (int i = 0; i < (counter-1); i++ ) {
             array[i]=array[i+1];
         }
-        if (typequalifier ==true){
-            array[counter]=0;} else{
-            array[counter]='n';
-        }
+        counter--;
         return  enq;
-    } */
+    }
 
     int getSize() {
         return counter;
